@@ -6,7 +6,6 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const _ = require("lodash");
 const mongoose = require('mongoose');
-const os = require('os');
 
 mongoose.connect(process.env.MONGODB_SERVER, {
   useNewUrlParser: true
