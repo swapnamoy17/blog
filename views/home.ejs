@@ -1,25 +1,31 @@
 
 <%- include("partials/header"); -%>
-    <h1>Home</h1>
-    <p> <%= startingContent %> </p>
+    <h1 class="home">Home</h1>
+    <p class="starting-content"> <%= startingContent %> </p>
 
 
   <%  posts.forEach(function(post){ %>
 
-    <h1><%=post.title%></h1>
-    <p>
+    <h1 class="post-title"><%=post.title%></h1>
+    <p class="post-content">
     <%=post.content.substring(0, 100) + " ..."%>
     <a href="/posts/<%=post.title%>">Read More</a>
-    <form class="" action="/delete" method="post">
+    </p>
+    <form class="button-form" action="/delete" method="post">
       <div class="item">
-        <button type="submit" name="delete" value=<%=post.title%>>Delete</button>
+        <button class="btn btn-outline-dark" type="submit" name="delete" value="<%=post.title%>">Delete</button>
       </div>
     </form>
-    </p>
-
+    <form class="button-form" action="/edit" method="post">
+      <div class="item">
+        <button class="btn btn-outline-dark" type="submit" name="edit" value="<%=post.title%>">Edit</button>
+      </div>
+    </form>
 
     <% }) %>
 
-  <a class="btn btn-primary" href="/compose" role="button">Compose</a>
+  <div class="compose-button">
+    <a class="btn btn-outline-dark" href="/compose" role="button">Compose</a>
+  </div>
 
 <%- include("partials/footer"); -%>

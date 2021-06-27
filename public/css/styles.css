@@ -3,21 +3,68 @@ html {
   position: relative;
 }
 
+.item{
+  padding-top: 10% ;
+  width: 5em;
+  margin: 0;
+  display: inline-block;
+}
+
+.compose-button{
+  padding-top: 0.75rem;
+}
+
+.button-form{
+  margin:0;
+  display: inline-block;
+}
+
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
 }
+
+.body-container{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 85%;
+  margin: 0 auto 0 auto;
+}
+
+.home{
+  padding-top: 0.5% ;
+  padding-bottom: 0.5%;
+  margin:0;
+}
+
+.starting-content{
+  margin:0;
+}
+
+.post-title{
+  margin: 0;
+  padding-top: 3%;
+  padding-bottom: 0.5%;
+}
+
+.post-content{
+  margin: 0;
+}
+
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
-    font-size: 12px;
     letter-spacing: 5px;
 }
 .navbar-nav  li a:hover {
     color: #1abc9c !important;
+}
+
+.navbar-brand{
+  margin: 0;
 }
 
 .footer-padding {

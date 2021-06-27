@@ -1,6 +1,16 @@
 <%- include("partials/header"); -%>
 
-  <h1><%=title%></h1>
-  <p><%=content%></p>
+  <h1 class="post-title"><%=title%></h1>
+  <p class="post-content"><%=content%></p>
+  <form class="button-form" action="/delete" method="post">
+    <div class="item">
+      <button class="btn btn-outline-dark" type="submit" name="delete" value="<%=title%>">Delete</button>
+    </div>
+  </form>
+  <form class="button-form" action="/edit" method="post">
+    <div class="item">
+      <button class="btn btn-outline-dark" type="submit" name="edit" value="<%=title%>">Edit</button>
+    </div>
+  </form>
 
 <%- include("partials/footer"); -%>
